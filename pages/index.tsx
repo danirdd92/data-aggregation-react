@@ -1,11 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { data, someFunc } from '../data';
+import { data, getData } from '../data';
 
 const Home: NextPage = () => {
 	const start = new Date(2021, 0, 1);
 	const end = new Date(2021, 5, 1);
-	someFunc('GroupName', 'month', start, end, data);
+	getData('GroupName', 'month', start, end, data);
+
 	return (
 		<div>
 			<Head>

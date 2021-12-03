@@ -27,7 +27,7 @@ interface OutputValues {
 	value: number;
 }
 
-export const someFunc = (groupByField: GroupByField, groupPeriod: GroupPeriod, start: Date, end: Date, arrData: InputData[]) => {
+export const getData = (groupByField: GroupByField, groupPeriod: GroupPeriod, start: Date, end: Date, arrData: InputData[]) => {
 	const dict = new Map<string, StepOneValues[]>();
 
 	// Groupd key val pairs by groupByField -> Get StepOne data
